@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.movie {
+  position: relative;
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie:hover .overlay {
+  opacity: 1;
+}
+
+.main {
+  position: relative;
+}
+
+.sticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 35px;
+}
+
+.rented {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 70px;
+}
+
+.browselinks {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.movielink {
+  color: white;
+}
+
+.frontpage {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mainpage {
+  width: 300px;
+  height: 300px;
+  font-size: 2rem;
+  margin: 68px;
+  text-decoration: none;
+  background-image: url("buttonbackground.jpg");
+  background-size: cover;
+  border-radius: 10%;
+}
+
+.mainpage:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
+}
+
+#footer {
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(31, 68, 137, 1);
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.logo {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  color: #ffc836;
+  text-decoration: none;
+}
+
+.option {
+  display: table;
+}
+
+.option > a {
+  color: #ffc836;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.nav-options {
+  display: flex;
+  list-style-type: none;
+}
+
+.cart {
+  width: 22px;
+  height: 22px;
+}
+
+.mobile-option {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.option :hover {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  /* Mobile View */
+  .header {
+    padding: 0px 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+
+  .nav-options.active {
+    background: rgba(31, 68, 137, 0.8);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    margin-top: 45%;
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mainpage {
+    width: 230px;
+    height: 230px;
+    margin: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Mobile view for even smaller screens */
+  .mainpage {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 200px;
+    margin: 10%;
+  }
+}
