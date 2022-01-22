@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/blockbuster-sim/static/css/main.481d6f3c.css",
+    "main.js": "/blockbuster-sim/static/js/main.c3c78151.js",
+    "static/media/buttonbackground.jpg": "/blockbuster-sim/static/media/buttonbackground.786213dd7bcd267e59c9.jpg",
+    "static/media/threedayrental.png": "/blockbuster-sim/static/media/threedayrental.854e4a0ae22343c2630a.png",
+    "static/media/onedayrental.png": "/blockbuster-sim/static/media/onedayrental.205d5546ba8d51f8bd40.png",
+    "static/media/twodayrental.png": "/blockbuster-sim/static/media/twodayrental.3171277810f86a46a6b8.png",
+    "index.html": "/blockbuster-sim/index.html",
+    "main.481d6f3c.css.map": "/blockbuster-sim/static/css/main.481d6f3c.css.map",
+    "main.c3c78151.js.map": "/blockbuster-sim/static/js/main.c3c78151.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.481d6f3c.css",
+    "static/js/main.c3c78151.js"
+  ]
+}
